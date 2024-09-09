@@ -1,0 +1,24 @@
+import subprocess
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument("-i", "--instance", dest="instance", help="Instance Number")
+parser.add_argument("-f", "--filename", dest="filename", help="Filename")
+
+options = parser.parse_args()
+
+stri="INPUT//"+str(options.filename)
+
+with open(stri,"r") as file:
+    data=file.readlines()
+    for exe in data:
+        code = 1
+        while(code==1):
+            exe=exe.rstrip("\n")
+            pro = subprocess.Popen(exe, shell=True)
+            code = pro.wait()
+            if(code==1):
+                print(exe+" FAILED - Process "+str(options.instance))
+            if(code==0):
+                print(exe+" COMPLETED - Process "+str(options.instance))
+            
