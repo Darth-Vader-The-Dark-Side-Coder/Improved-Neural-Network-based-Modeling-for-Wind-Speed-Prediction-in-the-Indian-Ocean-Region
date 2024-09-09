@@ -1,5 +1,3 @@
-Here is a README file based on the content of your project "Improved Neural Network-based Modeling for Wind Speed Prediction in the Indian Ocean Region":
-
 ---
 
 # Improved Neural Network-based Modeling for Wind Speed Prediction in the Indian Ocean Region
@@ -66,5 +64,3 @@ This project involves predicting wind speeds over a large region, specifically i
 This project is licensed under the MIT License. See the `LICENSE` file for more details.
 
 ---
-
-This README provides an overview of the project and its functionalities. You can adjust the repository links and commands as per your specific setup.
